@@ -12,7 +12,7 @@ class weapon : dice{
     void dealDamage(Entity target)
     {
         int rng = rnd.Next(base.numSides);
-        target.takeDamage(rng * strength);
+        target.TakeDamage(rng * strength);
     }
 
     void heal(Entity target)
