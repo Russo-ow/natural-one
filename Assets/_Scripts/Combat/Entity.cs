@@ -24,4 +24,12 @@ public class Entity : MonoBehaviour {
     }
 
     #endregion
+
+
+    #region Dice
+    public Weapon weapon;
+    public Armor armor;
+
+
+    #endregion
 }

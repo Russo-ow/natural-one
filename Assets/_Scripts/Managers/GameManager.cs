@@ -15,12 +15,7 @@ public class GameManager : MonoBehaviour {
     }
 
     #region Combat
-    private Friendly[] friendlies = new Friendly[4];
-    private Enemy[] enemies = new Enemy[4];
-
-    public void SetPosition(int position) {
-
-    }
+    public Entity[] field = new Entity[8];
     #endregion
 
     #region Gold
