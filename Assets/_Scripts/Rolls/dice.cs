@@ -1,4 +1,4 @@
-class Dice{
+public class Dice{
     public string name;
     public int numSides;
     public Entity owner;

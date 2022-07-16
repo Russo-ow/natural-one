@@ -1,4 +1,6 @@
-class Weapon : Dice{
+using UnityEngine;
+
+public class Weapon : Dice{
     string weaponClass;
     int strength;
 
@@ -11,13 +13,13 @@ class Weapon : Dice{
 
     void dealDamage(Entity target)
     {
-        int rng = random.Next(base.numSides);
+        int rng = Random.Range(0, base.numSides);
         target.TakeDamage(rng * strength);
     }
 
     void heal(Entity target)
     {
-        int rng = rnd.Next(base.numSides);
-        target.heal(rng * strength);
+        int rng = Random.Range(0, base.numSides);
+        target.Heal(rng * strength);
     }
 }

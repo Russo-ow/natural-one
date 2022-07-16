@@ -1,4 +1,6 @@
-class Potion : Dice{
+using UnityEngine;
+
+public class Potion : Dice{
     int efficacy = 1;
 
     public Potion(int efficacy, int numSides){
@@ -7,6 +9,6 @@ class Potion : Dice{
     }
 
     void heal(Entity target){
-        target.heal(random.Next(base.numSides) * efficacy);
+        target.Heal(Random.Range(0, base.numSides) * efficacy);
     }
 }

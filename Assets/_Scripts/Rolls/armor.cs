@@ -1,4 +1,6 @@
-class Armor : Dice{
+using UnityEngine;
+
+public class Armor : Dice{
     int evasionNum = 1;
     double defense;
 
@@ -10,7 +12,7 @@ class Armor : Dice{
     }
 
     double defend(Entity target){
-        int rng = random.Next(base.numSides);
+        int rng = Random.Range(0, base.numSides);
         if(rng == evasionNum){
             return -10;
         }else{

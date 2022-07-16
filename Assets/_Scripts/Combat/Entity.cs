@@ -17,6 +17,15 @@ public class Entity : MonoBehaviour {
         if (health <= 0) {
             Die();
         } 
+
+        // TODO show in UI
+    }
+
+    public virtual void Heal(int heal) {
+        // Apply heal
+        health += heal;
+
+        // TODO show in UI
     }
 
     protected virtual void Die() {
