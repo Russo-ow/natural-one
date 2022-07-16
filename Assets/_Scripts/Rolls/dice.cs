@@ -1,8 +1,14 @@
 class Dice{
-    string name;
-    int numSides;
-    Entity owner;
+    public string name;
+    public int numSides;
+    public Entity owner;
     
+    public Dice(){
+        name = "";
+        numSides = 6;
+        owner = null;
+    }
+
     public Dice(string name, int numSides, Entity owner){
         this.name = name;
         this.numSides = numSides;
