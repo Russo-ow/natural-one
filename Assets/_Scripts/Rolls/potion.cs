@@ -1,12 +1,12 @@
-class potion{
+class Potion : Dice{
     int efficacy = 1;
 
-    public potion(int efficacy, int numSides){
+    public Potion(int efficacy, int numSides){
         this.efficacy = efficacy;
         base.numSides = numSides;
     }
 
     void heal(Entity target){
-        target.heal(rnd.Next(base.numSides) * efficacy);
+        target.heal(random.Next(base.numSides) * efficacy);
     }
 }

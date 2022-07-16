@@ -1,8 +1,8 @@
-class potion : dice{
+class Armor : Dice{
     int evasionNum = 1;
     double defense;
 
-    public potion(string name, int numSides, int evasionNum, double defense){
+    public Armor(string name, int numSides, int evasionNum, double defense){
         this.defense = defense;
         this.evasionNum = evasionNum;
         base.numSides = numSides;
@@ -10,7 +10,7 @@ class potion : dice{
     }
 
     double defend(Entity target){
-        int rng = rnd.Next(base.numSides);
+        int rng = random.Next(base.numSides);
         if(rng == evasionNum){
             return -10;
         }else{

@@ -1,15 +1,15 @@
-class dice{
+class Dice{
     string name;
     int numSides;
     Entity owner;
     
-    public dice(string name, int numSides, Entity owner){
+    public Dice(string name, int numSides, Entity owner){
         this.name = name;
         this.numSides = numSides;
         this.owner = owner;
     }
 
-    public dice(string name, int numSides){
+    public Dice(string name, int numSides){
         this.name = name;
         this.numSides = numSides;
     }

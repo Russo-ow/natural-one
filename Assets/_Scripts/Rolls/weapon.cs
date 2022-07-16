@@ -1,8 +1,8 @@
-class weapon : dice{
-    String weaponClass;
+class Weapon : Dice{
+    string weaponClass;
     int strength;
 
-    public weapon(String name, String weaponClass, int strength, int numSides){
+    public Weapon(string name, string weaponClass, int strength, int numSides){
         base.name = name;
         this.weaponClass = weaponClass;
         this.strength = strength;
@@ -11,7 +11,7 @@ class weapon : dice{
 
     void dealDamage(Entity target)
     {
-        int rng = rnd.Next(base.numSides);
+        int rng = random.Next(base.numSides);
         target.TakeDamage(rng * strength);
     }
 
